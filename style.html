@@ -1,0 +1,88 @@
+<!--
+	1) CSS  cascading style sheet
+	   <style></style>
+	   External CSS  -> separated part.
+	2) CSS Selector:
+	  1. ID selector, use #
+	  2. class selector, use .
+	  3. universal, use * select whole page
+	  4. element selector, select all the same type of the elements
+	  5. group selector,
+
+	3) 1em represents for 16px
+
+	4) space means "going inside into"          # a parent selector 
+	   comma means "and"                 # a group selector
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table,th,td{
+			border:10px ridge #99ccff;
+			border-collapse: collapse;
+			font-size:2em;
+			color:white;
+		}
+		
+		#para{
+			font-size: 2em;
+			color:white;
+		}
+
+		#second th{
+			color: darkred;
+			border:10px dashed #99ccff;
+		}
+
+		body{
+			background-image:url(https://plus.unsplash.com/premium_photo-1661878091370-4ccb8763756a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW4lMjBuYXR1cmV8ZW58MHx8MHx8fDA%3D);
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			/*This is a comment*/
+		}
+
+	</style>
+</head>
+<body>
+	<p id='para'>This is a paragraph.</p>
+	<table>
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table><br><br>
+
+	<table id='second'>
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table>
+</body>
+
+
+</html>

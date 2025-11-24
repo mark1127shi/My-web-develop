@@ -1,0 +1,35 @@
+<html>
+<body>
+<button onclick="changeBg()">Random Background</button>
+<button id="btn" onmouseover="run()" onclick="clicked()">Click Me</button>
+<p id='clicks'></p>
+<script>
+function changeBg(){
+    let r = Math.floor(Math.random()*256);
+    let g = Math.floor(Math.random()*256);
+    let b = Math.floor(Math.random()*256);
+    document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+}
+
+function run(){
+    let btn = document.getElementById("btn");
+    btn.style.position = "absolute";
+    btn.style.left = Math.random()*300 + "px";
+    btn.style.top = Math.random()*300 + "px";
+}
+var number = 0;
+  document.onclick = function(){
+    number ++;
+    document.getElementById("clicks").innerHTML = number;
+  }
+function clicked(){
+    alert('you win!')
+}
+setInterval(function(){
+    let now = new Date();
+    document.getElementById("clock").innerHTML =
+        now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+},1000);
+</script>
+</body>
+</html>
